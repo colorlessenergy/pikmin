@@ -1,3 +1,64 @@
 ---
 layout: default
 ---
+
+<header>
+  {% include nav.html %}
+  <div>
+    <div>
+      <h2>LESS WORK,</h2>
+      <h2>MORE PIKMIN</h2>
+      <p>Pikmins are the best they are hard workers!</p>
+    </div>
+    <img src="assets/olimar-left.png" alt="olimar pic">
+  </div>
+</header>
+<section>
+  {% for pikmin in site.data.pikmin-title %}
+    <img src="{{pikmin.image}}" alt="{{pikmin.title}}">
+  {% endfor %}
+</section>
+<section>
+  <div>
+    <img src="assets/favicon.ico" alt="small flower">
+    <h2>Pikmins help Olimar explore the fars lands that need to be discovered</h2>
+    <p>
+      The player controls Captain Olimar, an alien who ends up on a mysterious planet,
+      where he becomes friend that are called pikmin, and utilizes their abilities to collect items.
+    </p>
+  </div>
+</section>
+<section>
+  <h2>Best Pikmin Games</h2>
+  {% for pikmin-cover in site.data.pikmin-games %}
+    <div>
+      <img src="{{pikmin-cover.image}}" alt="{{pikmin-cover.title}}">
+      <h2>{{pikmin-cover.title}}</h2>
+      <p>{{pikmin-cover.info}}</p>
+    </div>
+  {% endfor %}
+</section>
+<section>
+  <div>
+    <h2>There are many type of Pikmins</h2>
+    <p>Here are a few from the original game</p>
+    <div id="buttons-container"></div>
+  </div>
+  <div>
+    <div>
+      <h2 id="title"></h2>
+      <p id="text"></p>
+      <p><a id="link" href="#">Learn More</a></p>
+    </div>
+    <img id="image"\>
+  </div>
+</section>
+<section>
+  {% for pikmin-details in site.data.pikmin-details %}
+    <div>
+      <img src="assets/favicon.ico" alt="favicon flower">
+      <h2>{{pikmin-details.title}}</h2>
+      <p>{{pikmin-details.text}}</p>
+    </div>
+  {% endfor %}
+</section>
