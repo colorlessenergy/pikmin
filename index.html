@@ -4,7 +4,7 @@ layout: default
 
 <header>
   {% include nav.html %}
-  <div>
+  <div class="header-container">
     <div>
       <h2>LESS WORK,</h2>
       <h2>MORE PIKMIN</h2>
@@ -13,12 +13,12 @@ layout: default
     <img src="assets/olimar-left.png" alt="olimar pic">
   </div>
 </header>
-<section>
+<section class="game-titles">
   {% for pikmin in site.data.pikmin-title %}
     <img src="{{pikmin.image}}" alt="{{pikmin.title}}">
   {% endfor %}
 </section>
-<section>
+<section class="game-about">
   <div>
     <img src="assets/favicon.ico" alt="small flower">
     <h2>Pikmins help Olimar explore the fars lands that need to be discovered</h2>
@@ -28,29 +28,33 @@ layout: default
     </p>
   </div>
 </section>
-<section>
+<section class="pikmin-games">
   <h2>Best Pikmin Games</h2>
-  {% for pikmin-cover in site.data.pikmin-games %}
-    <div>
-      <img src="{{pikmin-cover.image}}" alt="{{pikmin-cover.title}}">
-      <h2>{{pikmin-cover.title}}</h2>
-      <p>{{pikmin-cover.info}}</p>
-    </div>
-  {% endfor %}
-</section>
-<section>
-  <div>
-    <h2>There are many type of Pikmins</h2>
-    <p>Here are a few from the original game</p>
-    <div id="buttons-container"></div>
+  <div class="pikmin-box-art">
+    {% for pikmin-cover in site.data.pikmin-games %}
+      <div>
+        <img class="{{pikmin-cover.class}}" src="{{pikmin-cover.image}}" alt="{{pikmin-cover.title}}">
+        <h2>{{pikmin-cover.title}}</h2>
+        <p>{{pikmin-cover.info}}</p>
+      </div>
+    {% endfor %}
   </div>
-  <div>
-    <div>
-      <h2 id="title"></h2>
-      <p id="text"></p>
-      <p><a id="link" href="#">Learn More</a></p>
+</section>
+<section class="pikmin-display">
+  <div class="pikmin-container">
+    <div class="pikmin-display-intro">
+      <h2>There are many type of Pikmins</h2>
+      <p>Here are a few from the original game</p>
     </div>
-    <img id="image"\>
+    <div id="buttons-container"></div>
+    <div>
+      <div>
+        <h2 id="title">red Pikmin</h2>
+        <p id="text">the red Pikmin is one of the first pikmin to be released and is resistance to fire</p>
+        <p><a id="link" href="http://pikmin.wikia.com/wiki/Red_Pikmin">Learn More</a></p>
+      </div>
+      <img id="image" src="assets/redpikmin.png"\>
+    </div>
   </div>
 </section>
 <section>

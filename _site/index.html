@@ -4,19 +4,23 @@
     <meta charset="utf-8">
     <title>pikmin</title>
     <link rel="shortcut icon" href="assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="pikmin.js" defer></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header>
   <nav>
-  <p>PIKMIN</p>
+  <p>Pikmin</p>
   <ul>
-    <li><a href="/index.html">HOME</a></li>
+    <li><a class="active" href="/index.html">HOME</a></li>
     <li><a href="https://github.com/colorlessenergy">MY WORK</a></li>
-    <li><a href="http://pikmin3.nintendo.com/">OFFCIAL</a></li>
+    <li><a href="http://pikmin3.nintendo.com/">Official</a></li>
   </ul>
 </nav>
 
-  <div>
+  <div class="header-container">
     <div>
       <h2>LESS WORK,</h2>
       <h2>MORE PIKMIN</h2>
@@ -25,7 +29,7 @@
     <img src="assets/olimar-left.png" alt="olimar pic">
   </div>
 </header>
-<section>
+<section class="game-titles">
   
     <img src="assets/pikmin1.png" alt="pikmin-1">
   
@@ -34,7 +38,7 @@
     <img src="assets/pikmin3.png" alt="pikmin-3">
   
 </section>
-<section>
+<section class="game-about">
   <div>
     <img src="assets/favicon.ico" alt="small flower">
     <h2>Pikmins help Olimar explore the fars lands that need to be discovered</h2>
@@ -44,41 +48,45 @@
     </p>
   </div>
 </section>
-<section>
+<section class="pikmin-games">
   <h2>Best Pikmin Games</h2>
-  
-    <div>
-      <img src="assets/pikmin1-cover.jpg" alt="pikmin 1 box art">
-      <h2>pikmin 1 box art</h2>
-      <p>first game to come out</p>
-    </div>
-  
-    <div>
-      <img src="assets/pikmin2-cover.jpg" alt="pikmin 2 box art">
-      <h2>pikmin 2 box art</h2>
-      <p>best game in my opinion</p>
-    </div>
-  
-    <div>
-      <img src="assets/pikmin3-cover.png" alt="pikmin 3 box art">
-      <h2>pikmin 3 box art</h2>
-      <p>lastest game to come out</p>
-    </div>
-  
-</section>
-<section>
-  <div>
-    <h2>There are many type of Pikmins</h2>
-    <p>Here are a few from the original game</p>
-    <div id="buttons-container"></div>
+  <div class="pikmin-box-art">
+    
+      <div>
+        <img class="pikmin1game" src="assets/pikmin1-cover.jpg" alt="Pikmin 1 box art">
+        <h2>Pikmin 1 box art</h2>
+        <p>This is the first version and it came out on the gamecube</p>
+      </div>
+    
+      <div>
+        <img class="" src="assets/pikmin2-cover.jpg" alt="Pikmin 2 box art">
+        <h2>Pikmin 2 box art</h2>
+        <p>this is the second version of the game and my favorite</p>
+      </div>
+    
+      <div>
+        <img class="" src="assets/pikmin3-cover.png" alt="Pikmin 3 box art">
+        <h2>Pikmin 3 box art</h2>
+        <p>this is the lastest version of the game and added more pikmin!</p>
+      </div>
+    
   </div>
-  <div>
-    <div>
-      <h2 id="title"></h2>
-      <p id="text"></p>
-      <p><a id="link" href="#">Learn More</a></p>
+</section>
+<section class="pikmin-display">
+  <div class="pikmin-container">
+    <div class="pikmin-display-intro">
+      <h2>There are many type of Pikmins</h2>
+      <p>Here are a few from the original game</p>
     </div>
-    <img id="image"\>
+    <div id="buttons-container"></div>
+    <div>
+      <div>
+        <h2 id="title">red Pikmin</h2>
+        <p id="text">the red Pikmin is one of the first pikmin to be released and is resistance to fire</p>
+        <p><a id="link" href="http://pikmin.wikia.com/wiki/Red_Pikmin">Learn More</a></p>
+      </div>
+      <img id="image" src="assets/redpikmin.png"\>
+    </div>
   </div>
 </section>
 <section>
@@ -123,7 +131,5 @@
   <p>&copy; Brian Munoz</p>
 </footer>
 
-    <script src="pikmin.js"></script>
-    <script src="main.js"></script>
   </body>
 </html>

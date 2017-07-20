@@ -1,11 +1,12 @@
-- title: pikmin 1 box art
+- title: Pikmin 1 box art
   image: assets/pikmin1-cover.jpg
-  info: first game to come out
+  info: This is the first version and it came out on the gamecube
+  class: pikmin1game
 
-- title: pikmin 2 box art
+- title: Pikmin 2 box art
   image: assets/pikmin2-cover.jpg
-  info: best game in my opinion
+  info: this is the second version of the game and my favorite
 
-- title: pikmin 3 box art
+- title: Pikmin 3 box art
   image: assets/pikmin3-cover.png
-  info: lastest game to come out
+  info: this is the lastest version of the game and added more pikmin!

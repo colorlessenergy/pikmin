@@ -1,0 +1,164 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+header .header-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+header .header-container h2 {
+  font-size: 60px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+header .header-container img {
+  align-self: center;
+  width: 30%;
+}
+
+header .header-container p {
+  color: #383838
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+
+nav p {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0 0 0 10%;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 0;
+  width: 28%;
+}
+
+nav ul li a.active {
+  color: #03f463;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #03f463;
+}
+
+.game-about {
+  align-items: center;
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+}
+
+.game-about div {
+  align-items: center;
+  border: 15px solid #00e2b6;
+  background-color: #0f1a26;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 63%;
+  width: 80%;
+}
+
+.game-about div h2 {
+  font-size: 30px;
+  text-align: center;
+  width: 60%;
+}
+
+.game-about div p {
+  font-size: 20px;
+  text-align: center;
+  width: 70%;
+}
+
+.game-titles {
+  align-items: center;
+  background-color: #bdbdbd;
+  display: flex;
+  justify-content: space-around;
+  height: 150px;
+}
+
+.pikmin-display {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 125vh;
+}
+
+.pikmin-display .pikmin-container {
+  border: 15px solid #00e2b6;
+  background-color: #0f1a26;
+  color: #fff;
+  height: 80%;
+  width: 82%;
+}
+
+.pikmin-display .pikmin-display-intro {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 25%;
+}
+
+.pikmin-display .pikmin-display-intro h2 {
+  font-size: 30px;
+  margin-bottom: 2%;
+}
+
+.pikmin-display .pikmin-display-intro p {
+  color: #9c9a9a;
+  margin: 0;
+}
+
+.pikmin-display img {
+  height: 10%;
+  width: 10%;
+}
+
+.pikmin-display .pikmin-container #buttons-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  height: 20%;
+}
+
+.pikmin-games .pikmin-box-art {
+  display: flex;
+  justify-content: space-around;
+  text-align: center
+}
+
+.pikmin-games h2:first-child {
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.pikmin-games .pikmin-box-art p {
+  margin: 0 8%;
+}
+
+.pikmin-games .pikmin-box-art .pikmin1game {
+  width: 63.5%;
+}
