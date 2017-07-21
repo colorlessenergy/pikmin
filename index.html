@@ -8,7 +8,7 @@ layout: default
     <div>
       <h2>LESS WORK,</h2>
       <h2>MORE PIKMIN</h2>
-      <p>Pikmins are the best they are hard workers!</p>
+      <p>Pikmins are the best and they are hard workers!</p>
     </div>
     <img src="assets/olimar-left.png" alt="olimar pic">
   </div>
@@ -49,8 +49,8 @@ layout: default
     <div id="buttons-container"></div>
     <div class="pikmin-display-info">
       <div>
-        <h2 id="title">red Pikmin</h2>
-        <p id="text">the red Pikmin is one of the first pikmin to be released and is resistance to fire</p>
+        <h2 id="title">Red Pikmin</h2>
+        <p id="text">the red Pikmin is one of the first pikmin to be released and has resistance to fire</p>
         <p><a id="link" href="http://pikmin.wikia.com/wiki/Red_Pikmin">Learn More</a></p>
       </div>
       <img id="image" src="assets/redpikmin.png"\>
@@ -59,7 +59,7 @@ layout: default
 </section>
 <section class="pikmin-features">
   <h1>5 Cool Pikmin</h1>
-  <main>
+  <main class="pikmin-feature-desktop">
     <div class="pikmin-features-display">
       {% for pikmin-details in site.data.pikmin-details %}
         <div>
@@ -78,5 +78,21 @@ layout: default
         </div>
       {% endfor %}
     </div>
+  </main>
+  <main class="pikmin-feature-responsive">
+      {% for pikmin-details in site.data.pikmin-details %}
+        <div>
+          <img src="assets/favicon.ico" alt="favicon flower">
+          <h2>{{pikmin-details.title}}</h2>
+          <p>{{pikmin-details.text}}</p>
+        </div>
+      {% endfor %}
+      {% for pikmin-details in site.data.pikmin-details2 %}
+        <div>
+          <img src="assets/favicon.ico" alt="favicon flower">
+          <h2>{{pikmin-details.title}}</h2>
+          <p>{{pikmin-details.text}}</p>
+        </div>
+      {% endfor %}
   </main>
 </section>

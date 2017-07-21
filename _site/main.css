@@ -104,6 +104,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-around;
   height: 150px;
+  width: 100%;
 }
 
 .pikmin-display {
@@ -230,5 +231,114 @@ nav ul li a:hover {
 }
 
 .pikmin-games .pikmin-box-art .pikmin1game {
-  width: 63.5%;
+  height: 355px;
+}
+
+.pikmin-feature-responsive {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  header .header-container {
+    flex-direction: column;
+  }
+
+  header .header-container div, header .header-container img  {
+    align-self: flex-start;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+   header .header-container img {
+     width: 40%;
+   }
+
+   header .header-container h2 {
+     font-size: 55px;
+   }
+
+   header .header-container p {
+    font-size: 18px;
+   }
+
+   nav ul {
+    width: 60%;
+   }
+
+   .game-titles {
+     flex-direction: column;
+     height: 450px;
+   }
+
+
+   .pikmin-games {
+     display: flex;
+     flex-direction: column;
+     height: 1800px;
+   }
+
+   .pikmin-display .pikmin-display-info {
+     align-items: flex-start;
+     flex-direction: column;
+   }
+
+   .pikmin-display .pikmin-display-info div {
+     width: auto;
+   }
+
+   .pikmin-display img {
+     align-self: auto;
+   }
+
+   .pikmin-display .pikmin-container {
+     width: 89%;
+   }
+
+   .pikmin-games .pikmin-box-art {
+     flex-direction: column;
+     flex: 1 1 auto;
+   }
+
+   .pikmin-display .pikmin-container #buttons-container {
+     flex-flow: wrap;
+   }
+
+   .pikmin-display .pikmin-container #buttons-container button  {
+     border: 1px solid #fff;
+     height: 40px;
+     width: 120px;
+   }
+
+   .pikmin-display .pikmin-container #buttons-container button:hover {
+     border: 2px solid #00e2b6;
+   }
+
+   .pikmin-feature-desktop {
+     display: none;
+   }
+
+   .pikmin-feature-responsive {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+   }
+
+   .pikmin-feature-responsive div {
+     width: 40%;
+   }
+}
+
+@media screen and (max-width: 667px) {
+  .game-about div h2 {
+    font-size: 23px;
+    width: 80%;
+  }
+
+  .game-about div p {
+    font-size: 18px;
+    width: 80%;
+  }
+  .pikmin-display .pikmin-display-intro h2 {
+    text-align: center;
+  }
 }
