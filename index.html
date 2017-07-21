@@ -47,7 +47,7 @@ layout: default
       <p>Here are a few from the original game</p>
     </div>
     <div id="buttons-container"></div>
-    <div>
+    <div class="pikmin-display-info">
       <div>
         <h2 id="title">red Pikmin</h2>
         <p id="text">the red Pikmin is one of the first pikmin to be released and is resistance to fire</p>
@@ -57,12 +57,26 @@ layout: default
     </div>
   </div>
 </section>
-<section>
-  {% for pikmin-details in site.data.pikmin-details %}
-    <div>
-      <img src="assets/favicon.ico" alt="favicon flower">
-      <h2>{{pikmin-details.title}}</h2>
-      <p>{{pikmin-details.text}}</p>
+<section class="pikmin-features">
+  <h1>5 Cool Pikmin</h1>
+  <main>
+    <div class="pikmin-features-display">
+      {% for pikmin-details in site.data.pikmin-details %}
+        <div>
+          <img src="assets/favicon.ico" alt="favicon flower">
+          <h2>{{pikmin-details.title}}</h2>
+          <p>{{pikmin-details.text}}</p>
+        </div>
+      {% endfor %}
     </div>
-  {% endfor %}
+    <div class="pikmin-features-display">
+      {% for pikmin-details in site.data.pikmin-details2 %}
+        <div>
+          <img src="assets/favicon.ico" alt="favicon flower">
+          <h2>{{pikmin-details.title}}</h2>
+          <p>{{pikmin-details.text}}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </main>
 </section>

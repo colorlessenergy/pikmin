@@ -3,6 +3,13 @@ body {
   margin: 0;
 }
 
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
 header .header-container {
   align-items: center;
   display: flex;
@@ -62,7 +69,7 @@ nav ul li a:hover {
 .game-about {
   align-items: center;
   display: flex;
-  height: 80vh;
+  height: 90vh;
   justify-content: center;
 }
 
@@ -102,10 +109,12 @@ nav ul li a:hover {
   align-items: center;
   display: flex;
   justify-content: center;
-  height: 125vh;
+  height: 150vh;
 }
 
 .pikmin-display .pikmin-container {
+  display: flex;
+  flex-direction: column;
   border: 15px solid #00e2b6;
   background-color: #0f1a26;
   color: #fff;
@@ -132,15 +141,69 @@ nav ul li a:hover {
 }
 
 .pikmin-display img {
-  height: 10%;
-  width: 10%;
+  align-self: flex-end;
+  margin: 0 5%;
+  width: 28%;
 }
 
 .pikmin-display .pikmin-container #buttons-container {
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;;
   height: 20%;
+}
+
+.pikmin-display .pikmin-container #buttons-container button {
+  background-color: #0f1a26;
+  border: 5px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  height: 60%;
+  width: 16%;
+  margin: 0 1%;
+}
+
+.pikmin-display .pikmin-container #buttons-container button:hover {
+  border: 8px solid #00e2b6;
+  outline: none;
+}
+
+.pikmin-display .pikmin-display-info {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+
+.pikmin-display .pikmin-display-info div {
+  margin: 0 5%;
+  width: 40%;
+}
+
+.pikmin-display .pikmin-display-info div h2 {
+  letter-spacing: 1px;
+}
+
+.pikmin-display .pikmin-display-info div p a {
+  color: #0ee0b7;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.pikmin-features h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.pikmin-features .pikmin-features-display {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pikmin-features .pikmin-features-display div {
+  width: 22%;
 }
 
 .pikmin-games .pikmin-box-art {
