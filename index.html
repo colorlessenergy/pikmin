@@ -10,17 +10,17 @@ layout: default
       <h2>MORE PIKMIN</h2>
       <p>Pikmins are the best and they are hard workers!</p>
     </div>
-    <img src="assets/olimar-left.png" alt="olimar pic">
+    <img src="{{site.baseurl}}/assets/olimar-left.png" alt="olimar pic">
   </div>
 </header>
 <section class="game-titles">
   {% for pikmin in site.data.pikmin-title %}
-    <img src="{{pikmin.image}}" alt="{{pikmin.title}}">
+    <img src="{{site.baseurl}}/{{pikmin.image}}" alt="{{pikmin.title}}">
   {% endfor %}
 </section>
 <section class="game-about">
   <div>
-    <img src="assets/favicon.ico" alt="small flower">
+    <img src="{{site.baseurl}}/assets/favicon.ico" alt="small flower">
     <h2>Pikmins help Olimar explore the fars lands that need to be discovered</h2>
     <p>
       The player controls Captain Olimar, an alien who ends up on a mysterious planet,
@@ -33,7 +33,7 @@ layout: default
   <div class="pikmin-box-art">
     {% for pikmin-cover in site.data.pikmin-games %}
       <div>
-        <img class="{{pikmin-cover.class}}" src="{{pikmin-cover.image}}" alt="{{pikmin-cover.title}}">
+        <img class="{{pikmin-cover.class}}" src="{{site.baseurl}}/{{pikmin-cover.image}}" alt="{{pikmin-cover.title}}">
         <h2>{{pikmin-cover.title}}</h2>
         <p>{{pikmin-cover.info}}</p>
       </div>
@@ -53,7 +53,7 @@ layout: default
         <p id="text">the red Pikmin is one of the first pikmin to be released and has resistance to fire</p>
         <p><a id="link" href="http://pikmin.wikia.com/wiki/Red_Pikmin">Learn More</a></p>
       </div>
-      <img id="image" src="assets/redpikmin.png"\>
+      <img id="image" src="{{site.baseurl}}/assets/redpikmin.png"\>
     </div>
   </div>
 </section>
@@ -63,7 +63,7 @@ layout: default
     <div class="pikmin-features-display">
       {% for pikmin-details in site.data.pikmin-details %}
         <div>
-          <img src="assets/favicon.ico" alt="favicon flower">
+          <img src="{{site.baseurl}}/assets/favicon.ico" alt="favicon flower">
           <h2>{{pikmin-details.title}}</h2>
           <p>{{pikmin-details.text}}</p>
         </div>
@@ -72,7 +72,7 @@ layout: default
     <div class="pikmin-features-display">
       {% for pikmin-details in site.data.pikmin-details2 %}
         <div>
-          <img src="assets/favicon.ico" alt="favicon flower">
+          <img src="{{site.baseurl}}/assets/favicon.ico" alt="favicon flower">
           <h2>{{pikmin-details.title}}</h2>
           <p>{{pikmin-details.text}}</p>
         </div>
@@ -82,14 +82,14 @@ layout: default
   <main class="pikmin-feature-responsive">
       {% for pikmin-details in site.data.pikmin-details %}
         <div>
-          <img src="assets/favicon.ico" alt="favicon flower">
+          <img src="{{site.baseurl}}/assets/favicon.ico" alt="favicon flower">
           <h2>{{pikmin-details.title}}</h2>
           <p>{{pikmin-details.text}}</p>
         </div>
       {% endfor %}
       {% for pikmin-details in site.data.pikmin-details2 %}
         <div>
-          <img src="assets/favicon.ico" alt="favicon flower">
+          <img src="{{site.baseurl}}/assets/favicon.ico" alt="favicon flower">
           <h2>{{pikmin-details.title}}</h2>
           <p>{{pikmin-details.text}}</p>
         </div>
